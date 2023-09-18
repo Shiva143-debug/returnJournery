@@ -1,0 +1,21 @@
+h1 {
+  color: green;
+}
+.won {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+@media (max-width: 576px) {
+  .won {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.image {
+  width: 200px;
+  height: 200px;
+}

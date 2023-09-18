@@ -1,0 +1,38 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  padding-top: 50px;
+  color: #ea580c;
+}
+.input-bg {
+  background-color: #fef2f4;
+  border-color: #ff0b37;
+}
+.error {
+  color: #ff0b37;
+}
+.card {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+
+  padding: 20px;
+}
+.success-image {
+  margin-left: 40px;
+}
+.button {
+  background-color: #ea580c;
+  margin-left: 40px;
+  border-color: #ea580c;
+  color: white;
+  border-radius: 8px;
+}
+.success-button {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  border-radius: 8px;
+  color: white;
+}
