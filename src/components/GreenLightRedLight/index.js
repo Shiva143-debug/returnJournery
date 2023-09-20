@@ -5,8 +5,11 @@ import Won from '../Won'
 import './index.css'
 
 const GreenLightRedLight = props => {
-  const {selectedOption} = props
+  const {selectedOption, firstName, email, mobileNo} = props
   console.log(selectedOption)
+  console.log(firstName)
+  console.log(email)
+  console.log(mobileNo)
   const [gameStarted, setGameStarted] = useState(false)
   const [boxColor, setBoxColor] = useState('green')
   const [score, setScore] = useState(0)
@@ -75,10 +78,19 @@ const GreenLightRedLight = props => {
   return (
     <div className="cards">
       {isWon === true && display === false ? (
-        <Won />
+        <Won
+          firstName={firstName}
+          email={email}
+          mobileNo={mobileNo}
+          timeLeft={timeLeft}
+        />
       ) : (
         <div>
           <div className="main">
+            <p>
+              Tap the green box to increase the score if you press the red the
+              game should be over
+            </p>
             <button
               type="button"
               className="start"

@@ -110,7 +110,12 @@ class Form extends Component {
       <div className="app-container">
         <div className="card">
           {isFormSubmitted ? (
-            <GreenLightRedLight selectedOption={selectedOption} />
+            <GreenLightRedLight
+              selectedOption={selectedOption}
+              firstName={firstName}
+              email={email}
+              mobileNo={mobileNo}
+            />
           ) : (
             <form className="form" onSubmit={this.formSubmit}>
               <h1 className="head">Registration</h1>
